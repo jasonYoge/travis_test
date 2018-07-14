@@ -6,13 +6,18 @@
   "author": "planningFor <544305893@qq.com>",
   "license": "MIT",
   "scripts": {
-    "eslint": "eslint index.js",
+    "lint": "eslint index.js",
     "dev": "node index.js"
   },
-  "pre-commit": ["eslint"],
+  "pre-commit": [
+    "lint"
+  ],
   "dependencies": {
     "babel-register": "^6.26.0",
     "eslint": "^5.1.0",
     "koa": "^2.5.2"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
   }
 }
