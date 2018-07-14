@@ -9,7 +9,7 @@
     "eslint": "eslint index.js",
     "dev": "node index.js"
   },
-  "pre-commit": ["lint"],
+  "pre-commit": ["eslint"],
   "dependencies": {
     "babel-register": "^6.26.0",
     "eslint": "^5.1.0",
