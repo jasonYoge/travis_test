@@ -13,6 +13,7 @@ before_script:
   - npm prune
 script:
   - npm run lint
+  - echo lalalal
 after_success:
   - npm run semantic-release
   - npm run report-coverage
